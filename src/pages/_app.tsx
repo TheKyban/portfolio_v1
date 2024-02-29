@@ -9,7 +9,7 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
     return (
-        <div>
+        <div className="w-full h-full relative">
             <Header />
             <Navbar />
             <AnimatePresence mode="wait">
