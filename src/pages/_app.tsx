@@ -9,7 +9,7 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
     return (
-        <div className="w-full h-full relative">
+        <div className="w-full min-h-screen relative bg-[url('/site-bg.svg')] text-white bg-cover bg-no-repeat">
             <Header />
             <Navbar />
             <AnimatePresence mode="wait">
