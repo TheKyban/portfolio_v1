@@ -27,7 +27,7 @@ const NavLinks = [
 export const Navbar = () => {
     const router = useRouter();
     return (
-        <div className="flex items-center lg:justify-center fixed h-max bottom-0 mt-auto top-0 lg:right-[2%] z-50 w-full lg:max-w-md lg:w-16 lg:h-screen">
+        <div className="flex items-center lg:justify-center fixed h-max bottom-0 mt-auto top-0 lg:right-[2%] z-50 w-full lg:max-w-md lg:w-14 lg:h-screen">
             <div className="flex lg:flex-col w-full items-center justify-between gap-y-10 px-4 md:px-40 lg:px-0 h-[80px] lg:h-max bg-white/10 backdrop-blur-sm lg:rounded-full py-8">
                 {NavLinks?.map((link) => (
                     <Link
