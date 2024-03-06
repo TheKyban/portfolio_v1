@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi2";
 import { Particle } from "./Particle";
+import Link from "next/link";
 
 export const Home = () => {
     return (
@@ -20,7 +21,7 @@ export const Home = () => {
                         eligendi rem veniam earum hic quidem.
                     </p>
 
-                    <div className="bg-[url('/circle-star.svg')] bg-no-repeat bg-contain bg-center w-[185px] h-[185px] text-white flex items-center justify-center relative group">
+                    <Link href={'/work'} className="bg-[url('/circle-star.svg')] bg-no-repeat bg-contain bg-center w-[185px] h-[185px] text-white flex items-center justify-center relative group z-10">
                         <Image
                             src={"/rounded-text.png"}
                             width={141}
@@ -30,24 +31,22 @@ export const Home = () => {
                         />
 
                         <HiArrowRight className="absolute text-4xl group-hover:translate-x-3 transition-all duration-300" />
-                    </div>
+                    </Link>
                 </div>
             </div>
 
             {/* image */}
-            <div className="w-full lg:w-[1200px] h-full absolute right-0 bottom-0">
+            <div className="w-full lg:w-[1200px] h-full absolute  right-0 bottom-0">
                 <div className="bg-none lg:bg-[url('/bg-explosion.png')] lg:bg-no-repeat lg:bg-right lg:bg-cover w-full h-full absolute translateZ-0 mix-blend-color-dodge" />
                 <Particle />
-                <div className="w-full h-full max-w-[737px] max-h-[678px] absolute bottom-0 right-[8%]">
-                    <div className="hidden lg:flex lg:max-w-none">
-                        <Image
-                            src={"/avatar.png"}
-                            width={737}
-                            height={678}
-                            alt="avatar"
-                            className="w-full h-full select-none"
-                        />
-                    </div>
+                <div className="hidden lg:flex w-full h-full max-w-[737px] max-h-[678px] absolute bottom-0 right-[8%]">
+                    <Image
+                        src={"/avatar.png"}
+                        width={737}
+                        height={678}
+                        alt="avatar"
+                        className="w-full h-full select-none"
+                    />
                 </div>
             </div>
         </div>
