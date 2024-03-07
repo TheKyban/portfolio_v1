@@ -4,20 +4,13 @@ import { Particle } from "./Particle";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Animation } from "./utils/animation";
+import { TopLeftImg } from "./top-left-img";
 
 export const Home = () => {
     return (
         <div className="min-h-full h-full w-full bg-primary/60 relative">
             {/* top left img */}
-            <div className="w-[240px] h-[250px] lg:w-[400px] lg:h-[400px] absolute left-0 top-0">
-                <Image
-                    src={"/top-left-img.png"}
-                    fill
-                    alt="img"
-                    className="mix-blend-color-dodge opacity-50 object-contain object-left-top select-none"
-                    draggable={false}
-                />
-            </div>
+            <TopLeftImg />
             {/* text */}
             <div className="w-full h-full bg-gradient-to-r from-[#131424]/10 via-black/30 ">
                 <div className="text-center flex flex-col justify-center items-center lg:items-start lg:pt-48 lg:text-left h-full mx-auto container">

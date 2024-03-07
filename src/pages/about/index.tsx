@@ -1,7 +1,11 @@
-export default function About(){
+import { AboutPage } from "@/components/About";
+import { TopLeftImg } from "@/components/top-left-img";
+
+export default function About() {
     return (
-        <div>
-            About
+        <div className="relative">
+            <TopLeftImg />
+            <AboutPage />
         </div>
-    )
+    );
 }
